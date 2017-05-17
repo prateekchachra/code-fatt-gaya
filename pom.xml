@@ -130,7 +130,7 @@
 			<configuration>
 				<scanIntervalSeconds>10</scanIntervalSeconds>
 				<webApp>
-					<contextPath>/spring2</contextPath>
+					<contextPath>/core-fatt-gaya</contextPath>
 				</webApp>
 			</configuration>
 		</plugin>
