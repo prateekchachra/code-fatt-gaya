@@ -27,7 +27,7 @@
 
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/app/*</url-pattern>
         
     </servlet-mapping>
     
@@ -55,5 +55,8 @@
 <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 </listener>
+<welcome-file-list> 
+  <welcome-file>/index.jsp</welcome-file> 
+</welcome-file-list>
 </web-app>     
 

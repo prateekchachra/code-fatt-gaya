@@ -130,7 +130,7 @@
 			<configuration>
 				<scanIntervalSeconds>10</scanIntervalSeconds>
 				<webApp>
-					<contextPath>/core-fatt-gaya</contextPath>
+					<contextPath>/code-fatt-gaya</contextPath>
 				</webApp>
 			</configuration>
 		</plugin>
