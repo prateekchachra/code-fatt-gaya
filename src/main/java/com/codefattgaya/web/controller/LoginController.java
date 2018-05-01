@@ -13,12 +13,11 @@ public class LoginController {
 
 	
 	@RequestMapping(value="/login", method=RequestMethod
-			.POST)
+			.GET)
 	public String loginPage(ModelMap modelMap, HttpServletRequest request,
 			HttpServletResponse response){
 		
 		modelMap.put("Test", "Test");
-		return "redirect:/app/mainpage";
-		
+		return "redirect:/app/mainpage";	
 	}
 }

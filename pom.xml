@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>code-fatt-gaya</groupId>
   <artifactId>code-fatt-gaya</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.00.00.00-S1</version>
   <name>Code Fatt Gaya</name>
   <packaging>war</packaging>
   <description>An intercompany forum.</description>
@@ -12,13 +12,11 @@
   </properties>
   
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.springframework/springloaded -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>springloaded</artifactId>
     <version>1.2.7.RELEASE</version>
 </dependency>
-  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-core</artifactId>
@@ -29,25 +27,21 @@
     <artifactId>spring-expression</artifactId>
     <version>4.3.8.RELEASE</version>
 </dependency>
-  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-search-orm -->
 <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-search-orm</artifactId>
     <version>5.7.0.Final</version>
 </dependency>
-  <!-- https://mvnrepository.com/artifact/org.springframework.webflow/spring-webflow -->
 <dependency>
     <groupId>org.springframework.webflow</groupId>
     <artifactId>spring-webflow</artifactId>
     <version>2.4.4.RELEASE</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-webmvc</artifactId>
     <version>4.3.8.RELEASE</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-web</artifactId>
@@ -65,13 +59,11 @@
 		<version>${spring.security.version}</version>
 	</dependency>
 
-	<!-- jstl for jsp page -->
 	<dependency>
 		<groupId>jstl</groupId>
 		<artifactId>jstl</artifactId>
 		<version>${jstl.version}</version>
 	</dependency>
-<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
@@ -83,25 +75,28 @@
             </exclusion>
         </exclusions>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.springframework.batch/spring-batch-core -->
 <dependency>
     <groupId>org.springframework.batch</groupId>
     <artifactId>spring-batch-core</artifactId>
     <version>3.0.7.RELEASE</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>2.5</version>
+    <scope>provided</scope>
+</dependency>
+
 <dependency>
     <groupId>org.hibernate.javax.persistence</groupId>
     <artifactId>hibernate-jpa-2.1-api</artifactId>
     <version>1.0.0.Final</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
     <version>4.12</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
 <dependency>
     <groupId>org.mockito</groupId>
     <artifactId>mockito-all</artifactId>
@@ -122,8 +117,7 @@
 			</configuration>
 		</plugin>
 
-                <!-- embedded jetty, good for testing -->
-		<plugin>
+    	<plugin>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-maven-plugin</artifactId>
 			<version>9.2.11.v20150529</version>
